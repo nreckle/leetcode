@@ -25,7 +25,7 @@ class Solution {
 	 * 
 	 * Set only one special element.
 	 */
-	public int lengthOfLongestSubstring(String s) {
+	public int lengthOfLongestSubstring2(String s) {
 		int i = 0, j = 0, ans = 0;
 		Set<Character> set = new HashSet<Character>();
 
@@ -48,7 +48,7 @@ class Solution {
 	 * 2. check whether map has
 	 * this element, if not, store it; otherwise, reset i position to map value + 1;
 	 */
-	public int lengthOfLongestSubstring2(String s) {
+	public int lengthOfLongestSubstring3(String s) {
 		int i = 0, j = 0, ans = 0;
 		int n = s.length();
 		Map<Character, Integer> map = new HashMap<Character, Integer>();
@@ -63,7 +63,7 @@ class Solution {
 		return ans;
 	}
 
-	public int lengthOfLongestSubstring3(String s) {
+	public int lengthOfLongestSubstring4(String s) {
 		int n = s.length(), ans = 0;
 		int[] index = new int[128]; 
 		// current index of character
